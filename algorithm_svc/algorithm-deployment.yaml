@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: algorithm-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: algorithm-app
+  template:
+    metadata:
+      labels:
+        app: algorithm-app
+    spec:
+      containers:
+        - name: algorithm-container
+          image: algorithm:latest
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8080

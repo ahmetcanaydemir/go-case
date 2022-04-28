@@ -1,0 +1,12 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: json-service
+spec:
+  type: NodePort
+  selector:
+    app: json-app
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8080
