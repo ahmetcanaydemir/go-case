@@ -1,4 +1,4 @@
-# Thinksurance Case Study - Ahmet Can Aydemir
+# Case Study - Ahmet Can Aydemir
 
 ## Libraries
 
